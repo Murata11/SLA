@@ -29,7 +29,7 @@
       <h1 class="text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
         QUIZ AURA
       </h1>
-      <p class="text-2xl mb-10 text-slate-300">Teste se vc é um betinha ou um alfa!</p>
+      <p class="text-2xl mb-10 text-slate-300">Teste se você é um betinha ou um alfa!</p>
       <button onclick="startQuiz()" 
               class="bg-yellow-400 hover:bg-yellow-300 text-black text-3xl font-bold py-6 px-16 rounded-2xl shadow-lg transition">
         INICIAR QUIZ
@@ -182,13 +182,13 @@
 
       if (isCorrect) {
         score += 100;
-        title.textContent = "Minimo...";
+        title.textContent = "Mínimo...";
         title.className = "text-4xl font-bold mb-4 text-green-500";
         text.textContent = "nada mais que a sua obrigação";
       } else {
         title.textContent = "Estou decepcionado...";
         title.className = "text-4xl font-bold mb-4 text-red-500";
-        text.textContent = `Obviamente a resposta era: ${questions[currentQuestion].options[questions[currentQuestion].answer]}`;
+        text.textContent = `Obviamente, a resposta era: ${questions[currentQuestion].options[questions[currentQuestion].answer]}`;
       }
 
       feedback.classList.remove('hidden');
